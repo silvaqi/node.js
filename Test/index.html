@@ -5,14 +5,14 @@
         <title>Teste</title>
     </head>
     <body>
-        <input type="text" name="link" id="link">
+        <input type="text" name="link" id="link" placeholder="Insert here your link">
         <button type="submit" onclick="myFunction()">Go</button>
         <iframe id="video" src=""></iframe>
     </body>
     <script>
         function myFunction(){
             const link = document.getElementById("link").value
-            console.log(link)
+            document.getElementById("video").src = link
         }
     </script>
 </html>
